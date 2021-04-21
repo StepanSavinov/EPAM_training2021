@@ -4,7 +4,7 @@ namespace epam_xt
 {
     class CustomString
     {
-        private char[] CharsString;
+        private char[] _charsString;
 
         public int Length { get; }
 
@@ -13,30 +13,30 @@ namespace epam_xt
         public CustomString(char[] chars)
         {
             Length = chars.Length;
-            CharsString = new char[Length];
+            _charsString = new char[Length];
 
-            Array.Copy(chars, CharsString, Length);
+            Array.Copy(chars, _charsString, Length);
         }
 
         public CustomString(string str)
         {
             Length = str.Length;
-            CharsString = str.ToCharArray();
+            _charsString = str.ToCharArray();
         }
 
-        public char this[int index] { get => CharsString[index]; set => CharsString[index] = value; }
+        public char this[int index] { get => _charsString[index]; set => _charsString[index] = value; }
 
-        public override string ToString() => new string(CharsString);
+        public override string ToString() => new string(_charsString);
         
         public char[] ToCharArray()
         {
             char[] temp = new char[Length];
-            Array.Copy(CharsString, temp, Length);
+            Array.Copy(_charsString, temp, Length);
 
-            return CharsString;
+            return _charsString;
         }
 
-        public int IndexOfChar(char c, int startIndex) => Array.FindIndex(CharsString, startIndex, index => index == c);
+        public int IndexOfChar(char c, int startIndex) => Array.FindIndex(_charsString, startIndex, index => index == c);
 
         public int IndexOfChar(char c) => IndexOfChar(c, 0);
 
