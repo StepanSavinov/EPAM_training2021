@@ -1,0 +1,12 @@
+ul{
+    list-style: none;
+    border-radius: 10px;
+    background: moccasin;
+    color: darkred;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 5px 5px darkred;
+}
+li{
+    padding: 5px;
+}

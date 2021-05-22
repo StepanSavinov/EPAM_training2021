@@ -1,0 +1,36 @@
+.email{
+    width: 220px;
+}
+
+.password{
+    width: 100px;
+}
+
+.button{
+    background-color: moccasin;
+    border: none;
+    font-family: Arial;
+    margin: 5px;
+}
+
+form{
+    font-family: Arial;
+    width: 350px;
+    border: 2px solid royalblue;
+    background-color: deepskyblue;
+    color: white;
+
+}
+
+h2{
+    padding: 5px;
+}
+
+hr{
+    border: 0.5px solid white;
+}
+
+label{
+    display: inline-block;
+    margin: 5px;
+}
