@@ -20,11 +20,16 @@
     float: left;
     width: 200px;
     border-left: 1px solid #aaaaaa;
+    border-right: 1px solid #aaaaaa;
     text-align: center;
     margin: 10px;
 }
 
 .card:first-child{
+    border: none;
+}
+
+.card:last-child{
     border: none;
 }
 
